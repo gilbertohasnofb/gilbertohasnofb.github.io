@@ -34,25 +34,25 @@ nav:
 # ------------------------------------------------------------------
 collections:
   compositions:
-    output: false          # entries have no individual pages — they're
-                            # rendered inline as a list on /compositions/
-                            # (sorted by year via Liquid in the layout)
+    output: false  # entries have no individual pages — they're
+                   # rendered inline as a list on /compositions/
+                   # (sorted by year via Liquid in the layout)
   photography:
-    output: false          # entries render as cards on /photography/,
-                            # in the order the files are listed (no
-                            # automatic sorting — order your files as
-                            # 01-, 02-, etc. or however you like)
+    output: false  # entries render as cards on /photography/,
+                   # in the order the files are listed (no
+                   # automatic sorting — order your files as
+                   # 01-, 02-, etc. or however you like)
   concerts:
-    output: false          # entries render as a list on /concerts/,
-                            # sorted by date (newest first) via Liquid
+    output: false  # entries render as a list on /concerts/,
+                   # sorted by date (newest first) via Liquid
   software:
-    output: false          # entries render as a list on /software/,
-                            # in the order the files are listed (no
-                            # automatic sorting — order your files as
-                            # 01-, 02-, etc. or however you like)
+    output: false  # entries render as a list on /software/,
+                   # in the order the files are listed (no
+                   # automatic sorting — order your files as
+                   # 01-, 02-, etc. or however you like)
   writing:
-    output: false          # entries render as a list on /writing/,
-                            # sorted by year (newest first) via Liquid
+    output: false  # entries render as a list on /writing/,
+                   # sorted by year (newest first) via Liquid
 
 # ------------------------------------------------------------------
 # Build settings

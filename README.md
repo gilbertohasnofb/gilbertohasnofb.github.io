@@ -1,4 +1,4 @@
-# Composer portfolio — Jekyll site (no theme)
+# Gilberto Agostinho portfolio — Jekyll site
 
 A minimal, custom-built Jekyll site (no third-party theme). Plain
 HTML/SCSS/Liquid you fully own and can modify freely.
@@ -6,7 +6,7 @@ HTML/SCSS/Liquid you fully own and can modify freely.
 ## Structure
 
 ```
-_config.yml          site settings, nav menu, collections
+_config.yml           site settings, nav menu, collections
 Gemfile               Ruby dependencies (uses the github-pages gem)
 _layouts/             page templates
 _includes/            reusable snippets (nav, head, footer)
@@ -16,14 +16,18 @@ assets/js/            programme-notes toggle script
 assets/img/           photos (about page, photography cards)
 assets/scores/        PDF scores (placeholders — replace these)
 _compositions/        one Markdown file per piece
-_concerts/             one Markdown file per performance
-_software/             one Markdown file per project
-_writing/              one Markdown file per dissertation/article
-_photography/          one Markdown file per photo/project card
-about.md, compositions.md, concerts.md, software.md, writing.md,
-photography.md, contact.md
-                       the seven nav pages
-index.html             redirects to /about/
+_concerts/            one Markdown file per performance
+_software/            one Markdown file per project
+_writing/             one Markdown file per dissertation/article
+_photography/         one Markdown file per photo/project card
+about.md              "about" page accessible from navigation bar
+compositions.md       "compositions" page accessible from navigation bar
+concerts.md           "concerts" page accessible from navigation bar
+software.md           "software" page accessible from navigation bar
+writing.md            "writing" page accessible from navigation bar
+photography.md        "photography" page accessible from navigation bar
+contact.md            "contact" page accessible from navigation bar
+index.html            redirects to /about/
 ```
 
 ## Setup
@@ -42,7 +46,7 @@ index.html             redirects to /about/
    bundle install
    bundle exec jekyll serve
    ```
-   then open http://localhost:4000
+   then open `http://localhost:4000`
 
 ## Adding a composition
 
@@ -77,10 +81,10 @@ Create a new file in `_concerts/`, e.g. `_concerts/2025-06-01-my-concert.md`:
 title: "Piece Being Performed"
 performer: "Performer or Ensemble Name"
 organiser: "Concert Series / Festival Name"   # optional
-organiser_url: "https://example.com"           # optional — omit to hide the button
-venue: "Venue Name"                             # optional
-city: "City"                                    # optional
-country: "Country"                              # optional
+organiser_url: "https://example.com"          # optional — omit to hide the button
+venue: "Venue Name"                           # optional
+city: "City"                                  # optional
+country: "Country"                            # optional
 date: 2025-06-01
 ---
 ```
@@ -113,8 +117,8 @@ Create a new file in `_writing/`, e.g. `_writing/2026-new-article.md`:
 title: "Article or Dissertation Title"
 year: 2026
 subtitle: "PhD dissertation, University Name"       # optional — shown as a plain line under the title
-url: "https://university.example.edu/link-to-it"     # optional — omit to hide the button
-link_label: "read article"                            # optional, defaults to "read"
+url: "https://university.example.edu/link-to-it"    # optional — omit to hide the button
+link_label: "read article"                          # optional, defaults to "read"
 ---
 The abstract goes in the body, as normal Markdown. It's hidden by
 default behind an "abstract" toggle button (same collapsible pattern
