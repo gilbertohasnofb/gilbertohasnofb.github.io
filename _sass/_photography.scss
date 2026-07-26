@@ -45,4 +45,8 @@
   font-weight: 700;
   font-size: 2rem;
   // color is set inline per-card via the text_color front matter field
+
+  @media (max-width: 600px) {
+    font-size: 1.35rem;
+  }
 }

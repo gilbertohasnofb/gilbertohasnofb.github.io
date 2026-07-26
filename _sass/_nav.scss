@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  position: relative; // anchor for the mobile scroll-fade overlay
 }
 
 .nav-links {
@@ -104,5 +105,39 @@
       font-size: 0.95rem;
       white-space: nowrap;
     }
+  }
+
+  // "Scroll shadow" hint: soft fade at either edge, shown/hidden by
+  // assets/js/nav-scroll-hint.js depending on how far the nav has
+  // been scrolled. Signals "there's more here" without extra icons.
+  .nav-row::before,
+  .nav-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 28px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 1;
+  }
+
+  .nav-row::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg), transparent);
+  }
+
+  .nav-row::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg), transparent);
+  }
+
+  .nav-row.can-scroll-left::before {
+    opacity: 1;
+  }
+
+  .nav-row.can-scroll-right::after {
+    opacity: 1;
   }
 }
