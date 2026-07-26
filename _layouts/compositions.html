@@ -4,13 +4,13 @@ layout: default
 <h1 class="page-title">{{ page.title }}</h1>
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
-{% assign sorted_compositions = site.compositions | sort: 'year' | reverse %}
+{% assign sorted_compositions = site.compositions | sort: 'date' | reverse %}
 
 <ul class="composition-list">
   {% for piece in sorted_compositions %}
     <li class="composition">
       <h2 class="composition-title">
-        <em>{{ piece.title }}</em> <span class="composition-year">({{ piece.year }})</span>
+        <b>{{ piece.title }}</b> <span class="composition-year">({{ piece.year }})</span>
       </h2>
 
       {% if piece.dedication %}
@@ -27,6 +27,10 @@ layout: default
       <div class="composition-actions">
         {% if piece.score %}
           <a class="btn" href="{{ piece.score | relative_url }}" target="_blank" rel="noopener">score</a>
+        {% endif %}
+
+        {% if piece.bandcamp_url %}
+          <a class="btn" href="{{ piece.bandcamp_url }}" target="_blank" rel="noopener">bandcamp</a>
         {% endif %}
 
         {% if has_notes > 0 %}
@@ -52,6 +56,27 @@ layout: default
             frameborder="no"
             allow="autoplay"
             src="https://w.soundcloud.com/player/?url={{ piece.soundcloud_url | uri_escape }}&color=%23b8863b&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+          </iframe>
+        </div>
+      {% endif %}
+
+      {% if piece.bandcamp_embed %}
+        <div class="composition-player">
+          {{ piece.bandcamp_embed }}
+        </div>
+      {% endif %}
+
+      {% if piece.spotify_url %}
+        <div class="composition-player">
+          <iframe
+            style="border-radius: 12px;"
+            src="{{ piece.spotify_url | replace: 'open.spotify.com/', 'open.spotify.com/embed/' }}"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
           </iframe>
         </div>
       {% endif %}

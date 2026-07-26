@@ -10,19 +10,22 @@ layout: default
   {% for concert in sorted_concerts %}
     <li class="concert">
       <h2 class="concert-title">
-        <em>{{ concert.title }}</em>
+        <b>{{ concert.title }}</b>
         {% if concert.date %}
-          <span class="concert-date">— {{ concert.date | date: "%-d %B %Y" }}</span>
+          <span class="concert-date">— {% if concert.date_display %}{{ concert.date_display }}{% else %}{{ concert.date | date: "%-d %B %Y" }}{% endif %}</span>
         {% endif %}
       </h2>
 
       <div class="concert-meta">
+        {% if concert.note %}<span>Note: {{ concert.note }}</span>{% endif %}
         {% if concert.performer %}<span>Performer: {{ concert.performer }}</span>{% endif %}
+        {% if concert.performers %}<span>Performers: {{ concert.performers }}</span>{% endif %}
+        {% if concert.concert_series %}<span>Concert: {{ concert.concert_series }}</span>{% endif %}
         {% if concert.organiser %}<span>Organiser: {{ concert.organiser }}</span>{% endif %}
-        {% if concert.venue or concert.city or concert.country %}
+        {% if concert.venue %}<span>Venue: {{ concert.venue }}</span>{% endif %}
+        {% if concert.city or concert.country %}
           <span>
             Location:
-            {%- if concert.venue %} {{ concert.venue }}{% if concert.city or concert.country %},{% endif %}{% endif -%}
             {%- if concert.city %} {{ concert.city }}{% if concert.country %},{% endif %}{% endif -%}
             {%- if concert.country %} {{ concert.country }}{% endif -%}
           </span>
