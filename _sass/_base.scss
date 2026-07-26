@@ -7,6 +7,12 @@ html {
   // form controls, scrollbars, etc. based on system preference, since
   // this site no longer offers a dark theme.
   color-scheme: light;
+
+  // Prevents Android Chrome's automatic text-size "boosting," which
+  // can inflate font sizes unpredictably on narrow columns (like a
+  // multi-item nav) even when the viewport meta tag is set correctly.
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -30,6 +36,11 @@ h1, h2, h3, h4 {
 h1 { font-size: 2.2rem; }
 h2 { font-size: 1.5rem; }
 h3 { font-size: 1.15rem; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.25rem; }
+}
 
 p {
   margin: 0 0 1em;

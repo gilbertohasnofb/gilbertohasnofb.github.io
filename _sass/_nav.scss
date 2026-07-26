@@ -69,3 +69,40 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .site-nav {
+    padding: 1rem $gutter;
+  }
+
+  .site-title {
+    font-size: 1.15rem;
+  }
+
+  .nav-row {
+    max-width: 100%;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 2px; // room so the scrollbar (if shown) doesn't clip text
+    max-width: 100%;
+
+    // hide the scrollbar visually while keeping it swipeable
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    li {
+      flex-shrink: 0; // don't let words compress/wrap, scroll instead
+    }
+
+    a {
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+  }
+}
