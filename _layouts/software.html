@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+
+<ul class="software-list">
+  {% for entry in site.software %}
+    <li class="software-entry">
+      <h2 class="software-title"><em>{{ entry.title }}</em></h2>
+
+      <div class="software-body">
+        {{ entry.content }}
+      </div>
+
+      {% if entry.url %}
+        <div class="software-actions">
+          <a class="btn" href="{{ entry.url }}" target="_blank" rel="noopener">website</a>
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

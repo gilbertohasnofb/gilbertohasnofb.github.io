@@ -1,0 +1,19 @@
+.social-icons {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+
+  a {
+    color: var(--color-text-secondary);
+    line-height: 0; // avoids extra inline-svg vertical spacing
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+}

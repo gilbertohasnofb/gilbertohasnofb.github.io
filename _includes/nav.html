@@ -1,0 +1,21 @@
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+
+    <div class="nav-row">
+      <ul class="nav-links">
+        {% for item in site.nav %}
+          {% assign clean_url = item.url | remove: '/' %}
+          {% assign clean_page = page.url | remove: '/' %}
+          <li>
+            <a href="{{ item.url | relative_url }}"
+               data-text="{{ item.title }}"
+               {% if clean_page == clean_url %}class="active"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

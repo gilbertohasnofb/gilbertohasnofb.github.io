@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+
+{% assign sorted_writing = site.writing | sort: 'year' | reverse %}
+
+<ul class="writing-list">
+  {% for item in sorted_writing %}
+    <li class="writing-entry">
+      <h2 class="writing-title">
+        <em>{{ item.title }}</em> <span class="writing-year">({{ item.year }})</span>
+      </h2>
+
+      {% if item.subtitle %}
+        <p class="writing-subtitle">{{ item.subtitle }}</p>
+      {% endif %}
+
+      {% assign has_abstract = item.content | strip_html | strip | size %}
+      {% assign abstract_id = "abstract-" | append: forloop.index %}
+
+      <div class="writing-actions">
+        {% if item.url %}
+          <a class="btn" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.link_label | default: "read" }}</a>
+        {% endif %}
+
+        {% if has_abstract > 0 %}
+          <button type="button" class="btn" aria-expanded="false" aria-controls="{{ abstract_id }}" data-toggle-notes>
+            abstract
+          </button>
+        {% endif %}
+      </div>
+
+      {% if has_abstract > 0 %}
+        <div id="{{ abstract_id }}" class="notes-content" hidden>
+          {{ item.content }}
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

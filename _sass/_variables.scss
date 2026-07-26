@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Fonts
+// ------------------------------------------------------------------
+$font-heading: 'Jost', 'Century Gothic', 'Futura', sans-serif;
+$font-body: 'Jost', 'Century Gothic', 'Futura', sans-serif;
+
+// ------------------------------------------------------------------
+// Layout
+// ------------------------------------------------------------------
+$max-width: 760px;
+$gutter: 1.5rem;
+
+// ------------------------------------------------------------------
+// Colors — defined as CSS custom properties for easy palette tweaks.
+// ------------------------------------------------------------------
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-accent: #b8863b;      // warm, muted accent — change to taste
+  --color-border: #e2e2e2;
+  --color-link: #1a1a1a;
+  --color-link-hover: var(--color-accent);
+  --color-button-bg: #ffffff;
+  --color-button-border: #1a1a1a;
+  --color-button-text: #1a1a1a;
+  --color-button-hover-bg: #1a1a1a;
+  --color-button-hover-text: #ffffff;
+}

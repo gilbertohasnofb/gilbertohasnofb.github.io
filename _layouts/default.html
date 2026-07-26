@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include nav.html %}
+    <main>
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/notes-toggle.js' | relative_url }}" defer></script>
+  </body>
+</html>

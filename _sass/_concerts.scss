@@ -1,0 +1,47 @@
+.concert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.concert {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.concert-title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 0 0 0.75em;
+
+  .concert-date {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    margin-left: 0.4em;
+  }
+}
+
+.concert-meta {
+  margin: 0 0 1em;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+
+  span {
+    display: block;
+  }
+}
+
+.concert-actions {
+  margin-bottom: 0.5em;
+}

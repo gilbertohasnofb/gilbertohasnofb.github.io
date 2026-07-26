@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+
+<div class="photo-grid">
+  {% for photo in site.photography %}
+    <div class="photo-card">
+      <img src="{{ photo.image | relative_url }}" alt="{{ photo.title | default: 'Photograph' }}">
+      {% if photo.title %}
+        <div class="photo-card-overlay">
+          <span class="photo-card-title" style="color: {{ photo.text_color | default: '#ffffff' }};">
+            {{ photo.title }}{% if photo.year %} ({{ photo.year }}){% endif %}
+          </span>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

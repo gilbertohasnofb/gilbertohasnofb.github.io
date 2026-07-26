@@ -1,0 +1,41 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 500px;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+  }
+
+  input,
+  textarea {
+    font-family: $font-body;
+    font-size: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    padding: 0.6em 0.75em;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-text);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    font-family: $font-body;
+  }
+
+  button.btn {
+    align-self: flex-start;
+    margin: 0;
+  }
+}

@@ -1,0 +1,71 @@
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1.25rem $gutter;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; // flush everything to the right
+  gap: 0.5rem;
+}
+
+.site-title {
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 1.4rem;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-block;
+    font-family: $font-body;
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    position: relative;
+
+    // Invisible bold copy of the same text, stacked with zero height.
+    // Since this is the widest possible rendering of the label, the
+    // link's own box (inline-block, shrink-to-fit) is always sized to
+    // fit the bold width — so toggling the visible text to bold via
+    // .active never changes layout / shifts neighboring links.
+    &::after {
+      content: attr(data-text);
+      display: block;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      font-weight: 700;
+    }
+
+    &:hover,
+    &.active {
+      color: var(--color-text);
+    }
+
+    &.active {
+      font-weight: 700;
+    }
+  }
+}

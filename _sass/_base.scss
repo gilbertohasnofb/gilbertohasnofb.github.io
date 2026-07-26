@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // Explicitly light-only: prevents the browser from auto-darkening
+  // form controls, scrollbars, etc. based on system preference, since
+  // this site no longer offers a dark theme.
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-heading;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2.5rem 0;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+main {
+  padding: 3rem 0 6rem;
+}
+
+.page-title {
+  margin-bottom: 0.25em;
+}
+
+.page-description {
+  color: var(--color-text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+// Simple button style, used for [score] / [programme notes] links
+.btn {
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 0.35em 0.9em;
+  border: 1px solid var(--color-button-border);
+  border-radius: 3px;
+  color: var(--color-button-text);
+  background-color: var(--color-button-bg);
+  margin: 0.25em 0.4em 0.25em 0;
+  cursor: pointer;
+
+  // reset native <button> UA styling so it matches <a class="btn">
+  appearance: none;
+  -webkit-appearance: none;
+  line-height: normal;
+
+  &:hover {
+    background-color: var(--color-button-hover-bg);
+    color: var(--color-button-hover-text);
+  }
+}
+
+

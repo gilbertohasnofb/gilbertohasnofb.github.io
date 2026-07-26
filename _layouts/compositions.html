@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+
+{% assign sorted_compositions = site.compositions | sort: 'year' | reverse %}
+
+<ul class="composition-list">
+  {% for piece in sorted_compositions %}
+    <li class="composition">
+      <h2 class="composition-title">
+        <em>{{ piece.title }}</em> <span class="composition-year">({{ piece.year }})</span>
+      </h2>
+
+      {% if piece.dedication %}
+        <p class="composition-dedication">{{ piece.dedication }}</p>
+      {% endif %}
+
+      <div class="composition-meta">
+        {% if piece.instrumentation %}<span>Instrumentation: {{ piece.instrumentation }}</span>{% endif %}
+        {% if piece.duration %}<span>Duration: {{ piece.duration }}</span>{% endif %}
+      </div>
+
+      {% assign has_notes = piece.content | strip_html | strip | size %}
+
+      <div class="composition-actions">
+        {% if piece.score %}
+          <a class="btn" href="{{ piece.score | relative_url }}" target="_blank" rel="noopener">score</a>
+        {% endif %}
+
+        {% if has_notes > 0 %}
+          {% assign notes_id = "notes-" | append: forloop.index %}
+          <button type="button" class="btn" aria-expanded="false" aria-controls="{{ notes_id }}" data-toggle-notes>
+            programme notes
+          </button>
+        {% endif %}
+      </div>
+
+      {% if has_notes > 0 %}
+        <div id="{{ notes_id }}" class="notes-content" hidden>
+          {{ piece.content }}
+        </div>
+      {% endif %}
+
+      {% if piece.soundcloud_url %}
+        <div class="composition-player">
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url={{ piece.soundcloud_url | uri_escape }}&color=%23b8863b&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+          </iframe>
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
