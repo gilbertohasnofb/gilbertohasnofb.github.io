@@ -12,15 +12,10 @@
   img {
     display: block;
     width: 100%;
-    height: 320px;
+    aspect-ratio: 1900 / 700; // matches the about-page photo's proportions
+    height: auto;
     object-fit: cover;
     transition: filter 0.2s ease;
-  }
-
-  @media (max-width: 600px) {
-    img {
-      height: 220px;
-    }
   }
 
   &:hover img {
