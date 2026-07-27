@@ -2,7 +2,7 @@
 title: "and thereafter they shape us"
 year: 2019
 date: 2019-05-04
-instrumentation: "solo violoncello"
+instrumentation: "violoncello"
 duration: ca. 14'30"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/and-thereafter-they-shape-us
 score: "/assets/scores/and thereafter they shape us.pdf"

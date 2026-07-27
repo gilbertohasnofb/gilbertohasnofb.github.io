@@ -56,7 +56,7 @@ Create a new file in `_compositions/`, e.g. `_compositions/2024-my-new-piece.md`
 ---
 title: "My New Piece"
 year: 2024
-instrumentation: "solo violin"
+instrumentation: "violin"
 duration: "4'20\""
 score: "/assets/scores/my-new-piece.pdf"          # required
 dedication: "for someone"                          # optional — omit to hide
