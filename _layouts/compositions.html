@@ -33,6 +33,10 @@ layout: default
           <a class="btn" href="{{ piece.pure_data_patch | relative_url }}" target="_blank" rel="noopener">pure data patch</a>
         {% endif %}
 
+        {% if piece.max_msp_patch %}
+          <a class="btn" href="{{ piece.max_msp_patch | relative_url }}" target="_blank" rel="noopener">max/msp patch</a>
+        {% endif %}
+
         {% if piece.bandcamp_url %}
           <a class="btn" href="{{ piece.bandcamp_url }}" target="_blank" rel="noopener">bandcamp</a>
         {% endif %}
