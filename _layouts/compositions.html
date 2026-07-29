@@ -18,6 +18,7 @@ layout: default
       {% endif %}
 
       <div class="composition-meta">
+        {% if piece.note %}<span>Note: {{ piece.note }}</span>{% endif %}
         {% if piece.instrumentation %}<span>Instrumentation: {{ piece.instrumentation }}</span>{% endif %}
         {% if piece.duration %}<span>Duration: {{ piece.duration }}</span>{% endif %}
       </div>
