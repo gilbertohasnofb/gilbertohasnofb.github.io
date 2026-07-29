@@ -37,6 +37,19 @@ layout: default
           <a class="btn" href="{{ concert.organiser_url }}" target="_blank" rel="noopener">organiser</a>
         </div>
       {% endif %}
+
+      {% if concert.youtube_url %}
+        {% assign yt_id = concert.youtube_url | split: 'v=' | last | split: '&' | first %}
+        <div class="concert-player">
+          <iframe
+            src="https://www.youtube.com/embed/{{ yt_id }}"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>

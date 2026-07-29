@@ -6,4 +6,6 @@ organiser: "Institute of Electronic Music and Acoustics (IEM), University of Mus
 city: "Graz"
 country: "Austria"
 date: 2021-07-21
+organiser_url: https://aimc2021.iem.at/events/concert-3/
+youtube_url: https://www.youtube.com/watch?v=VExgYZ1h6kI
 ---
