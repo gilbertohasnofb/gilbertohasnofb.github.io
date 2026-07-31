@@ -41,6 +41,16 @@
   font-size: 0.95rem;
 }
 
+.writing-meta {
+  margin: 0 0 1em;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+
+  span {
+    display: block;
+  }
+}
+
 .writing-actions {
   display: flex;
   flex-wrap: wrap;

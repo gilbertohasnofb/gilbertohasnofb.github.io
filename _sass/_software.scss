@@ -27,6 +27,22 @@
   @media (max-width: 600px) {
     font-size: 1.1rem;
   }
+
+  .software-year {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+  }
+}
+
+.software-meta {
+  margin: 0 0 1em;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+
+  span {
+    display: block;
+  }
 }
 
 .software-body {

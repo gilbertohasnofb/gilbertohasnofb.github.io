@@ -7,17 +7,28 @@ layout: default
 <ul class="software-list">
   {% for entry in site.software %}
     <li class="software-entry">
-      <h2 class="software-title"><b>{{ entry.title }}</b></h2>
+      <h2 class="software-title">
+        <b>{{ entry.title }}</b> <span class="software-year">({{ entry.year }})</span>
+      </h2>
+
+      <div class="software-meta">
+        {% if entry.language %}<span>Language: {{ entry.language }}</span>{% endif %}
+      </div>
 
       <div class="software-body">
         {{ entry.content }}
       </div>
 
-      {% if entry.url %}
-        <div class="software-actions">
-          <a class="btn" href="{{ entry.url }}" target="_blank" rel="noopener">website</a>
-        </div>
-      {% endif %}
+      <div class="software-actions">
+        {% if entry.docs %}
+          <a class="btn" href="{{ entry.docs | relative_url }}" target="_blank" rel="noopener">docs</a>
+        {% endif %}
+
+        {% if entry.repository %}
+          <a class="btn" href="{{ entry.repository | relative_url }}" target="_blank" rel="noopener">repository</a>
+        {% endif %}
+      </div>
+
     </li>
   {% endfor %}
 </ul>

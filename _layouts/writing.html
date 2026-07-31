@@ -17,6 +17,12 @@ layout: default
         <p class="writing-subtitle">{{ item.subtitle }}</p>
       {% endif %}
 
+      <div class="writing-meta">
+        {% if item.translation %}<span>Translation: {{ item.translation }}</span>{% endif %}
+        {% if item.author %}<span>Author: {{ item.author }}</span>{% endif %}
+        {% if item.authors %}<span>Authors: {{ item.authors }}</span>{% endif %}
+      </div>
+
       {% assign has_abstract = item.content | strip_html | strip | size %}
       {% assign abstract_id = "abstract-" | append: forloop.index %}
 
