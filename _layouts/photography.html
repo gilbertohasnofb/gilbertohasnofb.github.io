@@ -17,8 +17,8 @@ layout: default
       {% endif %}
     {% endcapture %}
 
-    {% if photo.url %}
-      <a class="photo-card" href="{{ photo.url }}" target="_blank" rel="noopener">
+    {% if photo.project_url %}
+      <a class="photo-card" href="{{ photo.project_url }}" target="_blank" rel="noopener">
         {{ card_content }}
       </a>
     {% else %}
