@@ -17,20 +17,20 @@ layout: default
       </h2>
 
       <div class="concert-meta">
-        {% if concert.note %}<span><b>Note:</b> {{ concert.note }}</span>{% endif %}
-        {% if concert.performer %}<span><b>Performer:</b> {{ concert.performer }}</span>{% endif %}
-        {% if concert.performers %}<span><b>Performers:</b> {{ concert.performers }}</span>{% endif %}
-        {% if concert.concert_series %}<span><b>Concert:</b> {{ concert.concert_series }}</span>{% endif %}
-        {% if concert.organiser %}<span><b>Organiser:</b> {{ concert.organiser }}</span>{% endif %}
-        {% if concert.venue %}<span><b>Venue:</b> {{ concert.venue }}</span>{% endif %}
-        {% if concert.radio_programme %}<span><b>Radio programme:</b> {{ concert.radio_programme }}</span>{% endif %}
-        {% if concert.radio_station %}<span><b>Radio station:</b> {{ concert.radio_station }}</span>{% endif %}
-        {% if concert.radio_programme_time %}<span><b>Time:</b> {{ concert.radio_programme_time }}</span>{% endif %}
+        {% if concert.note %}<span><b>Note:</b> {{ concert.note | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.performer %}<span><b>Performer:</b> {{ concert.performer | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.performers %}<span><b>Performers:</b> {{ concert.performers | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.concert_series %}<span><b>Concert:</b> {{ concert.concert_series | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.organiser %}<span><b>Organiser:</b> {{ concert.organiser | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.venue %}<span><b>Venue:</b> {{ concert.venue | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.radio_programme %}<span><b>Radio programme:</b> {{ concert.radio_programme | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.radio_station %}<span><b>Radio station:</b> {{ concert.radio_station | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if concert.radio_programme_time %}<span><b>Time:</b> {{ concert.radio_programme_time | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
         {% if concert.city or concert.country %}
           <span>
             {% if concert.city %}<b>Location:</b>{% else %}<b>Country:</b>{% endif %}
-            {%- if concert.city %} {{ concert.city }}{% if concert.country %},{% endif %}{% endif -%}
-            {%- if concert.country %} {{ concert.country }}{% endif -%}
+            {%- if concert.city %} {{ concert.city | markdownify | remove: "<p>" | remove: "</p>" }}{% if concert.country %},{% endif %}{% endif -%}
+            {%- if concert.country %} {{ concert.country | markdownify | remove: "<p>" | remove: "</p>" }}{% endif -%}
           </span>
         {% endif %}
       </div>

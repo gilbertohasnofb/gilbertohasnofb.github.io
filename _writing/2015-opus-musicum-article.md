@@ -4,10 +4,10 @@ subtitle: "[Touching Sound]. Article."
 year: 2015
 authors: "Agostinho, G., D. Bartoš, M. Hejl, J. Rataj, M. Rataj, & J. Trojan"
 periodical: Opus Musicum
-volume_issue: 47(4)
+volume_issue: "**47**(4)"
 pages: 58–80
 issn: 0862-8505
-full_citation: "Agostinho, G., D. Bartoš, M. Hejl, J. Rataj, M. Rataj, & J. Trojan. (2015). 'Dotknout se zvuku'. In: Opus Musicum 47(4), pp. 58–80. ISSN 0862-8505."
+full_citation: "Agostinho, G., D. Bartoš, M. Hejl, J. Rataj, M. Rataj, & J. Trojan. (2015). 'Dotknout se zvuku'. In: _Opus Musicum_ **47**(4), pp. 58–80. ISSN 0862-8505."
 link_url: "https://www.digitalniknihovna.cz/mzk/view/uuid:bd6f72e3-3147-4542-b422-647ca86e48ac?page=uuid:bd6f72e3-3147-4542-b422-647ca86e48ac_61"
 link_label: "read article"
 ---

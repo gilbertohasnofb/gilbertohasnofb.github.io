@@ -5,7 +5,7 @@ year: 2017
 authors: "Rataj, J. & G. Agostinho"
 publisher: Nakladatelství Akademie múzických umění v Praze
 isbn: 978-80-7331-419-4
-full_citation: "Rataj, J. & G. Agostinho (2017). Digitální technologie v hudební tvorbě pro akustické nástroje. Prague: Nakladatelství Akademie múzických umění v Praze. ISBN 978-80-7331-419-4"
+full_citation: "Rataj, J. & G. Agostinho (2017). _Digitální technologie v hudební tvorbě pro akustické nástroje_. Prague: Nakladatelství Akademie múzických umění v Praze. ISBN 978-80-7331-419-4"
 link_url: "https://namu.cz/digitalni-technologie-v-hudebni-tvorbe-pro-akusticke-nastroje"
 link_label: "buy book"
 ---

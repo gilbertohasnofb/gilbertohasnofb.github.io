@@ -18,17 +18,17 @@ layout: default
       {% endif %}
 
       <div class="writing-meta">
-        {% if item.author %}<span><b>Author:</b> {{ item.author }}</span>{% endif %}
-        {% if item.authors %}<span><b>Authors:</b> {{ item.authors }}</span>{% endif %}
-        {% if item.university %}<span><b>University:</b> {{ item.university }}</span>{% endif %}
-        {% if item.periodical %}<span><b>Periodical:</b> {{ item.periodical }}</span>{% endif %}
-        {% if item.volume_issue %}<span><b>Volume (Issue):</b> {{ item.volume_issue }}</span>{% endif %}
-        {% if item.publisher %}<span><b>Publisher:</b> {{ item.publisher }}</span>{% endif %}
-        {% if item.page %}<span><b>Page:</b> {{ item.page }}</span>{% endif %}
-        {% if item.pages %}<span><b>Pages:</b> {{ item.pages }}</span>{% endif %}
-        {% if item.isbn %}<span><b>ISBN:</b> {{ item.isbn }}</span>{% endif %}
-        {% if item.issn %}<span><b>ISSN:</b> {{ item.issn }}</span>{% endif %}
-        {% if item.full_citation %}<span><b>Full citation:</b> {{ item.full_citation }}</span>{% endif %}
+        {% if item.author %}<span><b>Author:</b> {{ item.author | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.authors %}<span><b>Authors:</b> {{ item.authors | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.university %}<span><b>University:</b> {{ item.university | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.periodical %}<span><b>Periodical:</b> {{ item.periodical | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.volume_issue %}<span><b>Volume (Issue):</b> {{ item.volume_issue | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.publisher %}<span><b>Publisher:</b> {{ item.publisher | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.page %}<span><b>Page:</b> {{ item.page | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.pages %}<span><b>Pages:</b> {{ item.pages | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.isbn %}<span><b>ISBN:</b> {{ item.isbn | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.issn %}<span><b>ISSN:</b> {{ item.issn | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+        {% if item.full_citation %}<span><b>Full citation:</b> {{ item.full_citation | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
       </div>
 
       {% assign has_abstract = item.content | strip_html | strip | size %}

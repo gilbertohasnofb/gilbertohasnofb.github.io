@@ -12,7 +12,7 @@ layout: default
       </h2>
 
       <div class="software-meta">
-        {% if entry.language %}<span><b>Language:</b> {{ entry.language }}</span>{% endif %}
+        {% if entry.language %}<span><b>Language:</b> {{ entry.language | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
       </div>
 
       <div class="software-body">

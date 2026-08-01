@@ -1,6 +1,6 @@
 ---
 title: "Cartography #8"
-note: Radio performance
+note: "Radio performance"
 performers: "laug.sonoris ensemble, conducted by Patrik Kako"
 radio_programme: "Futurissimo"
 radio_station: "Vltava Rozhlas"

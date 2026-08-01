@@ -2,7 +2,7 @@
 title: "Oiseaux Électroniques"
 year: 2013
 date: 2013-07-31
-note: Oiseaux Électroniques was selected as one of the winning pieces in the competition for electroacoustic miniatures under the theme 'Close, Closer', organized by Miso Music Portugal. Selected works were performed at the Música Viva Festival 2013 and the Lisbon Architecture Triennale (December 2013, Lisbon, Portugal).
+note: "_Oiseaux Électroniques_ was selected as one of the winning pieces in the competition for electroacoustic miniatures under the theme 'Close, Closer', organized by Miso Music Portugal. Selected works were performed at the Música Viva Festival 2013 and the Lisbon Architecture Triennale (December 2013, Lisbon, Portugal)."
 instrumentation: "fixed media"
 duration: 2'00"
 ---

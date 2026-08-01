@@ -1,6 +1,6 @@
 ---
 title: "what holds them together"
-note: Radio performance
+note: "Radio performance"
 performer: "Ryszard Lubieniecki"
 radio_station: "TVP Kultura"
 country: "Poland"

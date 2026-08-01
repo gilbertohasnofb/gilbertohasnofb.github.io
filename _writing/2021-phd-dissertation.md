@@ -4,7 +4,7 @@ subtitle: "PhD Thesis"
 year: 2021
 author: "Agostinho, G."
 university: "City, University of London"
-full_citation: "Agostinho, G. (2021). The Design of Note-Based Algorithmic Systems Through the Use of Mental Models [doctoral thesis]. London, United Kingdom: City, University of London."
+full_citation: "Agostinho, G. (2021). _The Design of Note-Based Algorithmic Systems Through the Use of Mental Models_ [doctoral thesis]. London, United Kingdom: City, University of London."
 link_url: "https://openaccess.city.ac.uk/id/eprint/28453/"
 link_label: "read thesis"
 ---

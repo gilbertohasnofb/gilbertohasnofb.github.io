@@ -1,6 +1,6 @@
 ---
 title: "what holds them together"
-note: Radio performance
+note: "Radio performance"
 performer: "Ryszard Lubieniecki"
 radio_programme: "Nocna strefa"
 radio_station: "Polskie Radio"
