@@ -5,7 +5,7 @@ layout: default
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
 <ul class="software-list">
-  {% for entry in site.software %}
+  {% for entry in site.software reversed %}
     <li class="software-entry">
       <h2 class="software-title">
         <b>{{ entry.title }}</b> <span class="software-year">({{ entry.year }})</span>

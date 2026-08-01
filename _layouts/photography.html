@@ -5,16 +5,26 @@ layout: default
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
 <div class="photo-grid">
-  {% for photo in site.photography %}
-    <div class="photo-card">
+  {% for photo in site.photography reversed %}
+    {% capture card_content %}
       <img src="{{ photo.image | relative_url }}" alt="{{ photo.title | default: 'Photograph' }}">
       {% if photo.title %}
         <div class="photo-card-overlay">
-          <span class="photo-card-title" style="color: {{ photo.text_color | default: '#ffffff' }};">
+          <span class="photo-card-title" style="--title-color: {{ photo.text_color }};">
             {{ photo.title }}{% if photo.year %} ({{ photo.year }}){% endif %}
           </span>
         </div>
       {% endif %}
-    </div>
+    {% endcapture %}
+
+    {% if photo.url %}
+      <a class="photo-card" href="{{ photo.url }}" target="_blank" rel="noopener">
+        {{ card_content }}
+      </a>
+    {% else %}
+      <div class="photo-card">
+        {{ card_content }}
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
