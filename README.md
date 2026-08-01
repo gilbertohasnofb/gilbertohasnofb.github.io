@@ -18,7 +18,7 @@ assets/scores/        PDF scores (placeholders — replace these)
 _compositions/        one Markdown file per piece
 _concerts/            one Markdown file per performance
 _software/            one Markdown file per project
-_writing/             one Markdown file per dissertation/article
+_writing/             one Markdown file per thesis/article
 _photography/         one Markdown file per photo/project card
 about.md              "about" page accessible from navigation bar
 compositions.md       "compositions" page accessible from navigation bar
@@ -114,9 +114,9 @@ Create a new file in `_writing/`, e.g. `_writing/2026-new-article.md`:
 
 ```yaml
 ---
-title: "Article or Dissertation Title"
+title: "Article or Thesis Title"
 year: 2026
-subtitle: "PhD dissertation, University Name"       # optional — shown as a plain line under the title
+subtitle: "PhD Thesis, University Name"             # optional — shown as a plain line under the title
 url: "https://university.example.edu/link-to-it"    # optional — omit to hide the button
 link_label: "read article"                          # optional, defaults to "read"
 ---
