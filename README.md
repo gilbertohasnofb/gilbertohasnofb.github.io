@@ -19,13 +19,13 @@ _compositions/        one Markdown file per piece
 _concerts/            one Markdown file per performance
 _software/            one Markdown file per project
 _writing/             one Markdown file per thesis/article
-_photography/         one Markdown file per photo/project card
+_visual/              one Markdown file per photo/project card
 about.md              "about" page accessible from navigation bar
 compositions.md       "compositions" page accessible from navigation bar
 concerts.md           "concerts" page accessible from navigation bar
 software.md           "software" page accessible from navigation bar
 writing.md            "writing" page accessible from navigation bar
-photography.md        "photography" page accessible from navigation bar
+visual.md             "visual" page accessible from navigation bar
 contact.md            "contact" page accessible from navigation bar
 index.html            redirects to /about/
 ```

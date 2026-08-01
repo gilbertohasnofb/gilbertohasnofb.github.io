@@ -1,9 +1,11 @@
 ---
 title: The Design of Note-Based Algorithmic Systems Through the Use of Mental Models
+subtitle: "PhD Thesis"
 year: 2021
-subtitle: "PhD Thesis. London, United Kingdom: City, University of London"
 author: "Agostinho, G."
-url: "https://openaccess.city.ac.uk/id/eprint/28453/"
+university: "City, University of London"
+full_citation: "Agostinho, G. (2021). The Design of Note-Based Algorithmic Systems Through the Use of Mental Models [doctoral thesis]. London, United Kingdom: City, University of London."
+link_url: "https://openaccess.city.ac.uk/id/eprint/28453/"
 link_label: "read thesis"
 ---
 This practice-based research, which consists of this thesis, a portfolio of compositions, and a programming library for Python, explores the role played by metaphors and mental models in providing a framework for algorithmic composers to operate within. When working with algorithms, the composer approaches the act of music creation through an algorithmic lens which, in turn, can often suggest specific compositional ideas. To put it simply, in order to compose with algorithms, the composer must think algorithmically, which, in turn, affects how they conceive their musical ideas in the first place. We are shaped by our tools.

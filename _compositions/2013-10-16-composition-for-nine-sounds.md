@@ -2,7 +2,7 @@
 title: "Composition for Nine Sounds"
 year: 2013
 date: 2013-10-16
-note: This is an instrumental generative work. Because of that, it is recommended that performers generate a new version of this work for each new performance. Performers are welcome to play more than one version in the same concert, in order to illustrate the algorithmic character of this composition.
+note: This is an instrumental generative work. Because of that, it is recommended that performers generate a new version of this work for each new performance. Performers are welcome to play more than one version in the same concert, in order to illustrate the algorithmic character of this composition. Composition for Nine Sounds has been selected as one of the winning pieces in the 2018 McMurry New Music Project (December 2017, Abilene TX, United States).
 instrumentation: "precussion"
 duration: on average, ca. 5'30"
 score: "/assets/scores/Composition for Nine Sounds.zip"

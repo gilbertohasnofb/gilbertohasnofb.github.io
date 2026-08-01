@@ -18,17 +18,25 @@ layout: default
       {% endif %}
 
       <div class="writing-meta">
-        {% if item.translation %}<span>Translation: {{ item.translation }}</span>{% endif %}
-        {% if item.author %}<span>Author: {{ item.author }}</span>{% endif %}
-        {% if item.authors %}<span>Authors: {{ item.authors }}</span>{% endif %}
+        {% if item.author %}<span><b>Author:</b> {{ item.author }}</span>{% endif %}
+        {% if item.authors %}<span><b>Authors:</b> {{ item.authors }}</span>{% endif %}
+        {% if item.university %}<span><b>University:</b> {{ item.university }}</span>{% endif %}
+        {% if item.periodical %}<span><b>Periodical:</b> {{ item.periodical }}</span>{% endif %}
+        {% if item.volume_issue %}<span><b>Volume (Issue):</b> {{ item.volume_issue }}</span>{% endif %}
+        {% if item.publisher %}<span><b>Publisher:</b> {{ item.publisher }}</span>{% endif %}
+        {% if item.page %}<span><b>Page:</b> {{ item.page }}</span>{% endif %}
+        {% if item.pages %}<span><b>Pages:</b> {{ item.pages }}</span>{% endif %}
+        {% if item.isbn %}<span><b>ISBN:</b> {{ item.isbn }}</span>{% endif %}
+        {% if item.issn %}<span><b>ISSN:</b> {{ item.issn }}</span>{% endif %}
+        {% if item.full_citation %}<span><b>Full citation:</b> {{ item.full_citation }}</span>{% endif %}
       </div>
 
       {% assign has_abstract = item.content | strip_html | strip | size %}
       {% assign abstract_id = "abstract-" | append: forloop.index %}
 
       <div class="writing-actions">
-        {% if item.url %}
-          <a class="btn" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.link_label | default: "read" }}</a>
+        {% if item.link_url %}
+          <a class="btn" href="{{ item.link_url }}" target="_blank" rel="noopener">{{ item.link_label | default: "read" }}</a>
         {% endif %}
 
         {% if has_abstract > 0 %}
