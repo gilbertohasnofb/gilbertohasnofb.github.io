@@ -6,6 +6,7 @@ dedication: "to the Neues Klaviertrio Dresden"
 duration: ca. 38'00"
 instrumentation: "violin, cello, and piano"
 score: "/assets/scores/methinks it is like a weasel.pdf"
+soundcloud_url: https://soundcloud.com/gilberto-agostinho/methinks-it-is-like-a-weasel
 ---
 _HAMLET. Do you see yonder cloud that’s almost in shape of a camel?_  
 _POLONIUS. By the mass, and ’tis like a camel, indeed._  

@@ -5,6 +5,7 @@ date: 2014-02-09
 instrumentation: "generative electroacoustic work"
 duration: ca. 5'40"
 pure_data_patch: "/assets/pure-data-patches/The Arrow of Time - Pure Data patch.zip"
+bandcamp_embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1290444618/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3365578142/transparent=true/" seamless><a href="https://gilbertoagostinho.bandcamp.com/album/early-electronic-pieces">early electronic pieces by Gilberto Agostinho</a></iframe>'
 ---
 The Arrow of Time is an electroacoustic piece for 8-channels created with generative methods in Pure Data. As sources of sound, it uses eight recordings of the ticking of eight different clocks (labelled as clocks A–H in this text). The sound of each clock will always be reproduced by a same speaker.
 
