@@ -1,10 +1,10 @@
-.visual-grid {
+.photography-grid {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.visual-card {
+.photography-card {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -28,7 +28,7 @@
   }
 }
 
-.visual-card-overlay {
+.photography-card-overlay {
   position: absolute;
   inset: 0;
   display: flex;
@@ -39,7 +39,7 @@
   pointer-events: none;  // clicks/hover pass through to the image beneath
 }
 
-.visual-card-title {
+.photography-card-title {
   font-family: $font-heading;
   font-weight: 700;
   font-size: 2.5rem;

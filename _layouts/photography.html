@@ -4,13 +4,13 @@ layout: default
 <h1 class="page-title">{{ page.title }}</h1>
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
-<div class="visual-grid">
-  {% for photo in site.visual reversed %}
+<div class="photography-grid">
+  {% for photo in site.photography reversed %}
     {% capture card_content %}
       <img src="{{ photo.image | relative_url }}" alt="{{ photo.title | default: 'Photograph' }}">
       {% if photo.title %}
-        <div class="visual-card-overlay">
-          <span class="visual-card-title" style="--title-color: {{ photo.text_color }};">
+        <div class="photography-card-overlay">
+          <span class="photography-card-title" style="--title-color: {{ photo.text_color }};">
             {{ photo.title }}{% if photo.year %} ({{ photo.year }}){% endif %}
           </span>
         </div>
@@ -18,11 +18,11 @@ layout: default
     {% endcapture %}
 
     {% if photo.project_url %}
-      <a class="visual-card" href="{{ photo.project_url }}" target="_blank" rel="noopener">
+      <a class="photography-card" href="{{ photo.project_url }}" target="_blank" rel="noopener">
         {{ card_content }}
       </a>
     {% else %}
-      <div class="visual-card">
+      <div class="photography-card">
         {{ card_content }}
       </div>
     {% endif %}
