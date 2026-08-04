@@ -4,11 +4,18 @@ layout: default
 <h1 class="page-title">{{ page.title }}</h1>
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
+{% assign composition_tags = "all,10+ players,3-9 players,duo,solo,open,electroacoustic" | split: "," %}
+<div class="tag-filters" role="group" aria-label="Filter compositions by ensemble size">
+  {% for tag in composition_tags %}
+    <button type="button" class="tag-filter{% if tag == "all" %} active{% endif %}" data-tag="{{ tag }}">{{ tag }}</button>
+  {% endfor %}
+</div>
+
 {% assign sorted_compositions = site.compositions | sort: 'date' | reverse %}
 
 <ul class="composition-list">
   {% for piece in sorted_compositions %}
-    <li class="composition">
+    <li class="composition" data-tags="{{ piece.tags | join: ',' }}">
       <h2 class="composition-title">
         <b>{{ piece.title }}</b> <span class="composition-year">({{ piece.year }})</span>
       </h2>

@@ -3,6 +3,7 @@ title: "Écoutez, s'il vous plaît! (1ère version)"
 year: 2012
 date: 2012-03-11
 instrumentation: "organ"
+tags: ["solo"]
 duration: ca. 2'45"
 score: "/assets/scores/Ecoutez, s'il vous plait! (1ere version).pdf"
 ---

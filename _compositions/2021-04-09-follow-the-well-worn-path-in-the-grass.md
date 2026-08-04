@@ -3,6 +3,7 @@ title: "follow the well-worn path in the grass"
 year: 2021
 date: 2021-04-09
 instrumentation: "flute, clarinet, violin, viola, cello, and piano"
+tags: ["3-9 players"]
 duration: ca. 18'30"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/follow-the-well-worn-path-in-the-grass
 score: "/assets/scores/follow the well-worn path in the grass.pdf"

@@ -3,6 +3,7 @@ title: "Cartography #10"
 year: 2018; revised in 2020
 date: 2018-08-30
 instrumentation: "marimba, vibraphone, and piano"
+tags: ["3-9 players"]
 duration: ca. 8'30"
 score: "/assets/scores/Cartography No. 10.pdf"
 ---

@@ -2,7 +2,8 @@
 title: "okno, okno, okno"
 year: 2023
 date: 2023-01-01
-instrumentation: "4-channel fixed media"
+instrumentation: "fixed media (4 channels)"
+tags: ["electroacoustic"]
 duration: 16'06"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/okno-okno-okno
 ---

@@ -3,6 +3,7 @@ title: "Ascension"
 year: 2014
 date: 2014-12-27
 instrumentation: "generative electroacoustic work"
+tags: ["electroacoustic"]
 duration: on average, ca. 6'30"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/ascension-version-a
 pure_data_patch: "/assets/pure-data-patches/Ascension - Pure Data patch.zip"

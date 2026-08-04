@@ -3,6 +3,7 @@ title: "Deviation"
 year: 2015
 date: 2015-01-14
 instrumentation: "four violoncellos"
+tags: ["3-9 players"]
 duration: ca. 3'30"
 score: "/assets/scores/Deviation.pdf"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/deviation-live

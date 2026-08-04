@@ -4,6 +4,7 @@ year: 2018
 date: 2018-04-27
 note: "_Cartography #9_ was selected as one of the winning pieces in the MotoContrario Call for Scores 2019 (December 2018, Trento, Italy)."
 instrumentation: "clarinet, violoncello, vibraphone, and piano"
+tags: ["3-9 players"]
 duration: ca. 9'00"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/cartography-9
 score: "/assets/scores/Cartography No. 9.pdf"

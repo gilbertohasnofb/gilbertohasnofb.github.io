@@ -3,6 +3,7 @@ title: "quietly come, quietly go"
 year: 2026
 date: 2026-02-28
 instrumentation: "cimbalom"
+tags: ["solo"]
 duration: ca. 13'30"
 dedication: "In memoriam Clarence Barlow"
 score: "/assets/scores/quietly come, quietly go.pdf"

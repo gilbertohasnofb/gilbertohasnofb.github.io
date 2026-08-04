@@ -3,6 +3,7 @@ title: "oh tiempo tus pirámides"
 year: 2026
 date: 2026-07-07
 instrumentation: "cello and piano"
+tags: ["duo"]
 duration: ca. 17'00"
 dedication: "to Matthias Lorenz and Miroslav Beinhauer"
 score: "/assets/scores/oh tiempo tus piramides.pdf"

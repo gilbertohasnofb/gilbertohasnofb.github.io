@@ -1,5 +1,6 @@
 ---
-title: "Ascension (4-channels version)"
+title: "Ascension"
+note: "4-channel version"
 venue: "MeetFactory"
 city: "Prague"
 country: "Czech Republic"

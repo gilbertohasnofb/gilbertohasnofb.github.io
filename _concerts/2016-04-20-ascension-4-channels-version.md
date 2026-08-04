@@ -1,5 +1,6 @@
 ---
-title: "Ascension (4-channels version)"
+title: "Ascension"
+note: "4-channel version"
 concert_series: "Festival Aktuelle Musik 016"
 venue: "Neues Museum"
 city: "Nuremberg"

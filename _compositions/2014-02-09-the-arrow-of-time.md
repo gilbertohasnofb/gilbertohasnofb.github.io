@@ -3,6 +3,7 @@ title: "The Arrow of Time"
 year: 2014; revised in 2025
 date: 2014-02-09
 instrumentation: "generative electroacoustic work"
+tags: ["electroacoustic"]
 duration: ca. 5'40"
 pure_data_patch: "/assets/pure-data-patches/The Arrow of Time - Pure Data patch.zip"
 bandcamp_embed: '<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1290444618/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3365578142/transparent=true/" seamless><a href="https://gilbertoagostinho.bandcamp.com/album/early-electronic-pieces">early electronic pieces by Gilberto Agostinho</a></iframe>'

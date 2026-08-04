@@ -4,6 +4,7 @@ year: 2016
 date: 2016-01-16
 duration: ca. 23'30"
 instrumentation: "three violoncellos"
+tags: ["3-9 players"]
 score: "/assets/scores/Beyond the Limit of Fertile Land.pdf"
 ---
 When composing this piece, I used de Bruijn sequences, which are sequences with an alphabet of size k in which every combination of n elements of this alphabet appears exactly just once, and no combinations are missing. E.g. the sequence 001021122(0) contains every combination possible of two numbers exactly once, i.e. 00, 01, 10, 02, 21, 12, 22, 20. A de Bruijn sequence is cyclic, and can be notated in two ways: the last n-1 elements can be repetitions of the first n-1, or alternatively ommited. I opted for the first option (explicit cycle instead of implicit) as, otherwise, not all combinations are present (e.g. in the example above, the string "20" would be missing, or rather left implicit).  

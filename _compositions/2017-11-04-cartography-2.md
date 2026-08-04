@@ -3,6 +3,7 @@ title: "Cartography #2"
 year: 2017
 date: 2017-11-04
 instrumentation: "piano"
+tags: ["solo"]
 duration: ca. 6'30"
 score: "/assets/scores/Cartography No. 2.pdf"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/cartography-2

@@ -3,7 +3,8 @@ title: "On the Origin of Pitches"
 year: 2012
 date: 2012-12-04
 note: "This is an instrumental generative work. Because of that, it is recommended that performers generate a new version of this work for each new performance. Performers are welcome to play more than one version in the same concert, in order to illustrate the algorithmic character of this composition."
-instrumentation: "vibraphone solo"
+instrumentation: "vibraphone"
+tags: ["solo"]
 duration: on average, ca. 10'00" to 20'00"
 score: "/assets/scores/On the Origin of Pitches.zip"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/on-the-origin-of-pitches-version-a-live

@@ -3,6 +3,7 @@ title: "Cartography #8"
 year: 2018
 date: 2018-04-12
 instrumentation: "flute, soprano saxophone, violin, violoncello, and accordion"
+tags: ["3-9 players"]
 duration: ca. 8'30"
 dedication: "to Ensemble Terrible"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/cartography-8

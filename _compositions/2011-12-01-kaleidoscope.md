@@ -3,6 +3,7 @@ title: "Kaleidoscope"
 year: 2011
 date: 2011-12-01
 instrumentation: "12 instruments"
+tags: ["10+ players"]
 duration: ca. 6'30"
 score: "/assets/scores/Kaleidoscope.pdf"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/kaleidoscope

@@ -4,6 +4,7 @@ year: 2020
 date: 2020-12-17
 note: "_what holds them together_ was selected by Score Follower for their Fall 2021 call for scores."
 instrumentation: "portative organ"
+tags: ["solo"]
 duration: ca. 14'30"
 spotify_url: https://open.spotify.com/track/6pTpQOViut0tvkkRs8A8CF?si=7dfd73ed37324b1c
 score: "/assets/scores/what holds them together.pdf"

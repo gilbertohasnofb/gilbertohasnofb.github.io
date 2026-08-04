@@ -1,5 +1,6 @@
 ---
 title: "okno, okno, okno"
+note: "4-channel version"
 concert_series: "ACOUSMONIUM: COMPOSITIONS IN SPACE - (H)AMU FEST"
 venue: "Galerie HAMU"
 city: "Prague"

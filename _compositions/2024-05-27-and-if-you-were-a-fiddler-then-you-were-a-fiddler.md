@@ -3,6 +3,7 @@ title: "and if you were a fiddler, then you were a fiddler"
 year: 2024
 date: 2024-05-27
 instrumentation: "fixed media"
+tags: ["electroacoustic"]
 dedication: "to Sinestéticas Collective"
 duration: 19'47"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/and-if-you-were-a-fiddler-then-you-were-a-fiddler

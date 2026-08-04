@@ -3,6 +3,7 @@ title: "Cartography #12"
 year: 2019
 date: 2019-04-15
 instrumentation: "flute, clarinet, violin, viola, and violoncello"
+tags: ["3-9 players"]
 duration: ca. 10'00"
 dedication: "to Ensemble Terrible"
 soundcloud_url: https://soundcloud.com/gilberto-agostinho/cartography-12
