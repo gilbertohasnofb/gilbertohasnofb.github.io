@@ -113,4 +113,18 @@
     background-color: #ffffff;
     color: var(--color-text);
   }
+
+  .tag-label-short {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .tag-label-full {
+      display: none;
+    }
+
+    .tag-label-short {
+      display: inline;
+    }
+  }
 }
