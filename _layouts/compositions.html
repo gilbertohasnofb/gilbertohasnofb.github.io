@@ -5,7 +5,7 @@ layout: default
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
 {% assign composition_tags = "all,10+ players,3-9 players,duo,solo,electroacoustic" | split: "," %}
-{% assign composition_tag_labels = "all,10+,3-9,duo,solo,elec." | split: "," %}
+{% assign composition_tag_labels = "all,10+ pl.,3-9 pl.,duo,solo,e/a" | split: "," %}
 <div class="tag-filters" role="group" aria-label="Filter compositions by ensemble size">
   {% for tag in composition_tags %}
     <button type="button" class="tag-filter{% if tag == "all" %} active{% endif %}" data-tag="{{ tag }}">
