@@ -32,7 +32,10 @@
     font-style: normal;
     font-weight: 400;
     color: var(--color-text-secondary);
-    margin-left: 0.4em;
+
+    &::before {
+      content: " — ";
+    }
   }
 }
 

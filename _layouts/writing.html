@@ -9,8 +9,19 @@ layout: default
 <ul class="writing-list">
   {% for item in sorted_writing %}
     <li class="writing-entry">
-      <h2 class="writing-title">
+      <h2 class="writing-title" id="{{ item.year }}-{{ item.title | slugify }}">
         <b>{{ item.title }}</b> <span class="writing-year">({{ item.year }})</span>
+        <button
+          type="button"
+          class="copy-link-btn"
+          data-copy-target="#{{ item.year }}-{{ item.title | slugify }}"
+          aria-label="Copy link to this entry">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path>
+            <line x1="8" y1="12" x2="16" y2="12"></line>
+          </svg>
+          <span class="copy-feedback">Copied!</span>
+        </button>
       </h2>
 
       {% if item.subtitle %}

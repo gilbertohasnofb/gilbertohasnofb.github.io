@@ -33,6 +33,57 @@
     font-weight: 400;
     color: var(--color-text-secondary);
   }
+
+  .copy-link-btn {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 0.5em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--color-text-secondary);
+    opacity: 0;
+    transition: opacity 0.15s ease, color 0.15s ease;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    .copy-feedback {
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      transform: translateX(-50%);
+      margin-bottom: 0.35em;
+      background-color: var(--color-text);
+      color: var(--color-bg);
+      font-family: $font-body;
+      font-size: 0.7rem;
+      font-weight: 400;
+      padding: 0.2em 0.5em;
+      border-radius: 3px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+    }
+
+    &.copied .copy-feedback {
+      opacity: 1;
+    }
+  }
+
+  &:hover .copy-link-btn {
+    opacity: 1;
+  }
 }
 
 .software-meta {

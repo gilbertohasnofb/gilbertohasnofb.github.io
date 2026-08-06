@@ -10,10 +10,7 @@ layout: default
   {% for concert in sorted_concerts %}
     <li class="concert">
       <h2 class="concert-title">
-        <b>{{ concert.title }}</b>
-        {% if concert.date %}
-          <span class="concert-date">— {% if concert.date_display %}{{ concert.date_display }}{% else %}{{ concert.date | date: "%-d %B %Y" }}{% endif %}</span>
-        {% endif %}
+        <em>{{ concert.title }}</em>{%- if concert.date %}<span class="concert-date">{% if concert.date_display %}{{ concert.date_display }}{% else %}{{ concert.date | date: "%-d %B %Y" }}{% endif %}</span>{% endif %}
       </h2>
 
       <div class="concert-meta">
