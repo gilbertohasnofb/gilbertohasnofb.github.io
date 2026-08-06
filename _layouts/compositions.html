@@ -19,13 +19,13 @@ layout: default
 
 <ul class="composition-list">
   {% for piece in sorted_compositions %}
-    <li class="composition" id="{{ piece.year }}-{{ piece.title | slugify }}" data-tags="{{ piece.tags | join: ',' }}">
+    <li class="composition" id="{{ piece.date | date: '%Y' }}-{{ piece.title | slugify }}" data-tags="{{ piece.tags | join: ',' }}">
       <h2 class="composition-title">
         <b>{{ piece.title }}</b> <span class="composition-year">({{ piece.year }})</span>
         <button
           type="button"
           class="copy-link-btn"
-          data-copy-target="#{{ piece.year }}-{{ piece.title | slugify }}"
+          data-copy-target="#{{ piece.date | date: '%Y' }}-{{ piece.title | slugify }}"
           aria-label="Copy link to this composition">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path>
