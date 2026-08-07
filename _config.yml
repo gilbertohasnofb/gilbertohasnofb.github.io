@@ -15,7 +15,7 @@ baseurl: ""
 # ------------------------------------------------------------------
 nav:
   - title: about
-    url: /about/
+    url: /
   - title: compositions
     url: /compositions/
   - title: concerts

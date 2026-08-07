@@ -1,7 +1,7 @@
 ---
 layout: page
 title: about
-permalink: /about/
+permalink: /
 ---
 <img
   src="{{ '/assets/img/about.jpg' | relative_url }}"
