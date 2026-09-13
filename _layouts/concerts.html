@@ -19,7 +19,7 @@ layout: default
 <h2 class="concert-section-title">upcoming concerts</h2>
 {% if upcoming_count > 0 %}
   <ul class="concert-list">
-    {% for concert in concerts_asc %}
+    {% for concert in concerts_desc %}
       {% assign concert_date_str = concert.date | date: '%Y-%m-%d' %}
       {% if concert_date_str >= today %}
         {% include concert-entry.html concert=concert %}
