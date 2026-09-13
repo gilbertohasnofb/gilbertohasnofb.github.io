@@ -1,0 +1,49 @@
+<li class="concert">
+  <h2 class="concert-title">
+    <em>{{ include.concert.title }}</em>{%- if include.concert.date %}<span class="concert-date">{% if include.concert.date_display %}{{ include.concert.date_display }}{% else %}{{ include.concert.date | date: "%-d %B %Y" }}{% endif %}</span>{% endif %}
+  </h2>
+
+  <div class="concert-meta">
+    {% if include.concert.note %}<span><b>Note:</b> {{ include.concert.note | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.performer %}<span><b>Performer:</b> {{ include.concert.performer | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.performers %}<span><b>Performers:</b> {{ include.concert.performers | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.concert_series %}<span><b>Concert:</b> {{ include.concert.concert_series | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.organiser %}<span><b>Organiser:</b> {{ include.concert.organiser | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.venue %}<span><b>Venue:</b> {{ include.concert.venue | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.radio_programme %}<span><b>Radio programme:</b> {{ include.concert.radio_programme | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.radio_station %}<span><b>Radio station:</b> {{ include.concert.radio_station | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.radio_programme_time %}<span><b>Time:</b> {{ include.concert.radio_programme_time | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
+    {% if include.concert.city or include.concert.country %}
+      <span>
+        {% if include.concert.city %}<b>Location:</b>{% else %}<b>Country:</b>{% endif %}
+        {%- if include.concert.city %} {{ include.concert.city | markdownify | remove: "<p>" | remove: "</p>" }}{% if include.concert.country %},{% endif %}{% endif -%}
+        {%- if include.concert.country %} {{ include.concert.country | markdownify | remove: "<p>" | remove: "</p>" }}{% endif -%}
+      </span>
+    {% endif %}
+  </div>
+
+  {% if include.concert.organiser_url %}
+    <div class="concert-actions">
+      <a class="btn" href="{{ include.concert.organiser_url }}" target="_blank" rel="noopener">organiser</a>
+    </div>
+  {% endif %}
+
+  {% if include.concert.radio_url %}
+    <div class="concert-actions">
+      <a class="btn" href="{{ include.concert.radio_url }}" target="_blank" rel="noopener">radio programme</a>
+    </div>
+  {% endif %}
+
+  {% if include.concert.youtube_url %}
+    {% assign yt_id = include.concert.youtube_url | split: 'v=' | last | split: '&' | first %}
+    <div class="concert-player">
+      <iframe
+        src="https://www.youtube.com/embed/{{ yt_id }}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  {% endif %}
+</li>

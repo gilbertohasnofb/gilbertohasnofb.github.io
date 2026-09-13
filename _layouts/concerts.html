@@ -4,58 +4,40 @@ layout: default
 <h1 class="page-title">{{ page.title }}</h1>
 {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
 
-{% assign sorted_concerts = site.concerts | sort: 'date' | reverse %}
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign concerts_asc = site.concerts | sort: 'date' %}
+{% assign concerts_desc = concerts_asc | reverse %}
 
+{% assign upcoming_count = 0 %}
+{% for concert in concerts_asc %}
+  {% assign concert_date_str = concert.date | date: '%Y-%m-%d' %}
+  {% if concert_date_str >= today %}
+    {% assign upcoming_count = upcoming_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="concert-section-title">upcoming concerts</h2>
+{% if upcoming_count > 0 %}
+  <ul class="concert-list">
+    {% for concert in concerts_asc %}
+      {% assign concert_date_str = concert.date | date: '%Y-%m-%d' %}
+      {% if concert_date_str >= today %}
+        {% include concert-entry.html concert=concert %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="concert-empty">No upcoming concerts or radio performances scheduled at the moment.</p>
+{% endif %}
+
+<div class="concert-divider">***</div>
+
+<h2 class="concert-section-title">past concerts</h2>
 <ul class="concert-list">
-  {% for concert in sorted_concerts %}
-    <li class="concert">
-      <h2 class="concert-title">
-        <em>{{ concert.title }}</em>{%- if concert.date %}<span class="concert-date">{% if concert.date_display %}{{ concert.date_display }}{% else %}{{ concert.date | date: "%-d %B %Y" }}{% endif %}</span>{% endif %}
-      </h2>
-
-      <div class="concert-meta">
-        {% if concert.note %}<span><b>Note:</b> {{ concert.note | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.performer %}<span><b>Performer:</b> {{ concert.performer | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.performers %}<span><b>Performers:</b> {{ concert.performers | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.concert_series %}<span><b>Concert:</b> {{ concert.concert_series | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.organiser %}<span><b>Organiser:</b> {{ concert.organiser | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.venue %}<span><b>Venue:</b> {{ concert.venue | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.radio_programme %}<span><b>Radio programme:</b> {{ concert.radio_programme | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.radio_station %}<span><b>Radio station:</b> {{ concert.radio_station | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.radio_programme_time %}<span><b>Time:</b> {{ concert.radio_programme_time | markdownify | remove: "<p>" | remove: "</p>" }}</span>{% endif %}
-        {% if concert.city or concert.country %}
-          <span>
-            {% if concert.city %}<b>Location:</b>{% else %}<b>Country:</b>{% endif %}
-            {%- if concert.city %} {{ concert.city | markdownify | remove: "<p>" | remove: "</p>" }}{% if concert.country %},{% endif %}{% endif -%}
-            {%- if concert.country %} {{ concert.country | markdownify | remove: "<p>" | remove: "</p>" }}{% endif -%}
-          </span>
-        {% endif %}
-      </div>
-
-      {% if concert.organiser_url %}
-        <div class="concert-actions">
-          <a class="btn" href="{{ concert.organiser_url }}" target="_blank" rel="noopener">organiser</a>
-        </div>
-      {% endif %}
-
-      {% if concert.radio_url %}
-        <div class="concert-actions">
-          <a class="btn" href="{{ concert.radio_url }}" target="_blank" rel="noopener">radio programme</a>
-        </div>
-      {% endif %}
-
-      {% if concert.youtube_url %}
-        {% assign yt_id = concert.youtube_url | split: 'v=' | last | split: '&' | first %}
-        <div class="concert-player">
-          <iframe
-            src="https://www.youtube.com/embed/{{ yt_id }}"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      {% endif %}
-    </li>
+  {% for concert in concerts_desc %}
+    {% assign concert_date_str = concert.date | date: '%Y-%m-%d' %}
+    {% if concert_date_str < today %}
+      {% include concert-entry.html concert=concert %}
+    {% endif %}
   {% endfor %}
 </ul>
