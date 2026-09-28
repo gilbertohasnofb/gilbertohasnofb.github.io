@@ -1,9 +1,8 @@
 ---
 title: "oh tiempo tus pirámides"
 performers: "Matthias Lorenz and Miroslav Beinhauer"
-venue: "Venue TBC"
+venue: "Berliner Kabarett Anstalt"
 city: "Berlin"
 country: "Germany"
-date: 2027-09-01
-date_display: "Autumn 2027 (date TBC)"
+date: 2027-09-21
 ---
