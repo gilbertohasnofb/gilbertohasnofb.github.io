@@ -3,10 +3,13 @@ layout: page
 title: about
 permalink: /
 ---
-<img
-  src="{{ '/assets/img/about.jpg' | relative_url }}"
-  alt="Portrait of Gilberto Agostinho"
-  class="about-photo">
+<figure class="about-figure">
+  <img
+    src="{{ '/assets/img/about.jpg' | relative_url }}"
+    alt="Portrait of Gilberto Agostinho"
+    class="about-photo">
+  <figcaption class="about-photo-credit">Photo © 2026 Tabitha Poulter</figcaption>
+</figure>
 
 Gilberto Agostinho is a Brazilian composer based in London, holding a PhD in Music from City, University of London. His work focuses on algorithmic composition, with research interests spanning automatic score generation, repetition and perception, musical mapping, and generative techniques. He is particularly drawn to linear algorithmic processes that, when rigorously applied, result in music that is perceptually ambiguous.
 

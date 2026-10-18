@@ -86,12 +86,24 @@ main {
   }
 }
 
+.about-figure {
+  margin: 0 0 2rem; // the 2rem spacing that used to sit on the image
+}
+
 .about-photo {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 4px;
-  margin-bottom: 2rem;
+  margin-bottom: 0; // spacing now lives on .about-figure, below the credit
+}
+
+.about-photo-credit {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: right;
+  color: var(--color-text-secondary);
 }
 
 // Simple button style, used for [score] / [programme notes] links
